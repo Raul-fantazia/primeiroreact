@@ -1,0 +1,54 @@
+.container {
+    background-color: #121212;
+    color: #b3b3b3;
+}
+
+.row {
+    justify-content: center;
+}
+
+.col-md-6 {
+    background-color: #282828;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #1ed760;
+    margin-bottom: 1.5rem;
+}
+
+/* editando formulario */
+.form-label {
+    color: #b3b3b3;
+}
+
+.form-control {
+    background-color: #333;
+    border: none;
+    color: #fff;
+}
+
+.form-control:focus {
+    background-color: #444;
+    color: #fff; /* Adicionado o ponto e vírgula aqui */
+    box-shadow: none;
+}
+
+.btn-primary {
+    background-color: #1ed760;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #1db954;
+}
+
+/* "criar conta */
+.text-center a {
+    color:#1ed760;
+}
+
+.text-center a:hover {
+    text-decoration: underline;
+}
