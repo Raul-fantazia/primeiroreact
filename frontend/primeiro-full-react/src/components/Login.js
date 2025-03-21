@@ -25,7 +25,7 @@ function Login() {
         // Armazene o token no localStorage ou em um cookie
         localStorage.setItem('token', resposta.data.token);
 
-        // Redirecione o usuário para a página principal
+        // Redirecionando o usuário para a página principal
         window.location.href = '/pagina-principal'; // Substitua pela sua rota
       } else {
         setMensagemErro('Login realizado com sucesso, mas token não recebido.');
@@ -37,7 +37,13 @@ function Login() {
         setMensagemErro('Erro ao fazer login. Tente novamente.');
       }
     }
-  };
+
+    };
+
+    // fazendo login com a conta do spotify
+    const handleSpotifyLogin = () => {
+      window.location.href = 'http://localhost:8000/api/spotify/authorize'
+    };
 
   return (
     <Container className="d-flex justify-content-center align-items-center vh-100">
@@ -61,6 +67,9 @@ function Login() {
                 <div className="d-grid gap-2">
                     <Button variant="primary" type="submit">
                         Login
+                    </Button>
+                    <Button variant = "success" onClick= {handleSpotifyLogin}>
+                      Login com Spotify
                     </Button>
                 </div>
             </Form>
